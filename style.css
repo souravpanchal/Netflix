@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+body {
+    background-color: #000000;
+}
+
+.main {
+    background-image: url(assest/image/bg.jpg);
+    height: 95vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    z-index: 20;
+}
+
+.main .box {
+    height: 95vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top: 0;
+    background-color: #000000;
+}
+
+nav {
+    max-width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    height: 62px;
+}
+
+nav img {
+    color: rgb(88, 4, 4);
+    width: 140px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    position: relative;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    height: calc(100% - 71px);
+    gap: 15px;
+    margin: 5px;
+    font-family: "Roboto", sans-serif;
+    padding: 0px 30px;
+    /* font-family: "Bebas Neue", sans-serif; */
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation {
+    height: 9px;
+    background-color: rgb(31, 30, 30);
+}
+
+.btn {
+    background-color: white;
+    font-weight: bolder;
+    color: white;
+    margin: 8px;
+    border: 1px solid gray;
+    padding: 3px 48px 9px 19px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.386);
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 24px;
+
+}
+
+.btn-red-sm {
+    padding: 1px 11px 6px 9px;
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+    border-radius: 2px;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+
+.main input {
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2px 128px 22px 14px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    border-radius: 2px;
+}
+
+.first {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    max-width: 70vw;
+    margin: auto;
+}
+@media  screen and (max-width:1000px) {
+    .first{
+        flex-wrap: wrap;
+    }
+}
+.secimg img {
+    margin-top: 2px;
+    top: 13px;
+    width: 460px;
+    z-index: 10;
+    position: relative;
+}
+.secimg {
+    position: relative;
+}
+.secimg video {
+    width: 400px;
+    position: absolute;
+    top: 51px;
+    right: 0;
+}
+section.first >div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    
+}
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+section.first > div :nth-child(2){
+    font-size: 24px;
+}
+section.first{
+    height: 80vh;
+}
+section.third video{
+    /* padding: 9px 102px 50px 23px; */
+
+    /* //change by me */
+    padding: 25px 89px 19px 53px;
+    width: 19vw;
+    /* width: 18vw; */
+}
+section.feqbox{
+    height: 90vh;
+}
+.feqbox{
+    transition: all 0.2s ease-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    max-width: 60vw;
+    margin: 36px auto;
+    cursor: pointer;
+    background-color: #2d2d2d
+}
+.feq h2{
+    text-align: center;
+}
+.feq{
+    font-size: 24px;
+    color: white;
+    background-color: rgb(5, 5, 5);
+    padding: 24px;
+}
+.feqbox:hover{
+    color: white;
+    background-color: rgb(31, 30, 30);
+}
+.footer{
+    color: white;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@media  screen and (max-width:1000px) {
+    .footer{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+footer{
+    color: white;
+    margin: auto;
+    margin: auto;
+    max-width: 60vw;
+    padding: 34px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+footer span{
+    color: white;
+   text-align: center;
+}
+footer .question{
+    padding: 34px 0;
+}
+@media  screen and (max-width:1000px) {
+    .secimg img {
+        width: 260px;
+    }
+    .secimg video {
+        width: 260px;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+    .hero-button {
+        display: flex;
+        flex-direction: column;
+    }
+    .feq h2{
+        font-size: 32px;
+    }
+}
+footer {
+    max-width: 90vw;
+}
+section{
+    max-width: 90vw;
+    max-height: 90vw;
+}
